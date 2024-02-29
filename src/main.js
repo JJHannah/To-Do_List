@@ -1,3 +1,4 @@
-import "./css/style.css";
+import "../css/style.css";
 
-//2:22:38
+//2:29:32
+import events from "./utils/events";

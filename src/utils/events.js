@@ -11,3 +11,5 @@ form.addEventListener("submit", function (e) {
   list.append(newLi);
   inputForm.value = "";
 });
+
+export default events;

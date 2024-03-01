@@ -5,6 +5,7 @@ body {
 .container {
   width: 100%;
   /* border: 1px solid red; */
+  /* height: 50vh; */
   margin-left: auto;
   margin-right: auto;
   padding-left: 0.5rem;

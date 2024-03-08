@@ -14,10 +14,11 @@ body {
   justify-content: center;
   align-items: center;
 }
-h1 {
+label {
   text-align: center;
   font-weight: 700;
   text-transform: uppercase;
+  display: inline-block;
 }
 button {
   padding: 0.5rem 1rem;

@@ -22,5 +22,4 @@ const eventsForm = () => {
   });
 };
 
-// eventsForm();
 export default eventsForm;

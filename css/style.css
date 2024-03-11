@@ -4,8 +4,8 @@ body {
 }
 .container {
   width: 100%;
-  /* border: 1px solid red; */
-  /* height: 50vh; */
+  border: 1px solid red;
+  height: 80vh;
   margin-left: auto;
   margin-right: auto;
   padding-left: 0.5rem;
@@ -13,12 +13,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 label {
   text-align: center;
-  font-weight: 700;
+  font-size: 1.5em;
   text-transform: uppercase;
   display: inline-block;
+  margin-bottom: 1rem;
 }
 button {
   padding: 0.5rem 1rem;
@@ -28,4 +30,7 @@ button {
 }
 input {
   padding: 0.5rem;
+}
+.list {
+  display: inline;
 }

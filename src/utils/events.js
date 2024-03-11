@@ -1,23 +1,26 @@
-const form = document.querySelector("#form");
-const inputText = document.querySelector(".inputText");
-const ullist = document.querySelector(".list");
+const eventsForm = () => {
+  const form = document.querySelector("#form");
+  const inputText = document.querySelector(".inputText");
+  const ullist = document.querySelector(".list");
 
-form.addEventListener("click", function (e) {
-  e.preventDefault();
+  form.addEventListener("click", function (e) {
+    e.preventDefault();
 
-  const inputValue = inputText.value;
+    const inputValue = inputText.value;
 
-  const newLi = document.createElement("LI");
-  const checkBox = document.createElement("input");
-  checkBox.type = "checkbox";
-  newLi.appendChild(checkBox);
+    const newLi = document.createElement("LI");
+    const checkBox = document.createElement("input");
+    checkBox.type = "checkbox";
+    newLi.appendChild(checkBox);
 
-  const textNode = document.createTextNode(inputValue);
-  ullist.appendChild(textNode);
+    const textNode = document.createTextNode(inputValue);
+    ullist.appendChild(textNode);
 
-  ullist.appendChild(newLi);
+    ullist.appendChild(newLi);
 
-  inputText.value = "";
-});
+    inputText.value = "";
+  });
+};
 
-export default events;
+// eventsForm();
+export default eventsForm;

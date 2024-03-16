@@ -1,15 +1,16 @@
 const eventsForm = () => {
   const inputElement = document.querySelector(".inputElement");
   const btnSave = document.querySelector(".btnSave");
+  const todoList = [];
 
-  btnSave.addEventListener("click", function (e) {
-    e.preventDefault();
-
+  btnSave.addEventListener("click", addTodo);
+  function addTodo() {
     const inputValue = inputElement.value;
-    console.log(inputValue);
+    todoList.push(inputValue);
+    console.log(todoList);
 
     inputElement.value = "";
-  });
+  }
 };
 
 export default eventsForm;

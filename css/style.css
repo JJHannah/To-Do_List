@@ -4,7 +4,7 @@ body {
 }
 .container {
   width: 100%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   height: 80vh;
   margin-left: auto;
   margin-right: auto;
@@ -20,9 +20,9 @@ label {
   font-size: 1.5em;
   text-transform: uppercase;
   display: inline-block;
-  margin-bottom: 1rem;
 }
 button {
+  margin-top: 1rem;
   padding: 0.5rem 1rem;
   background-color: #e11d48;
   color: white;
@@ -30,7 +30,4 @@ button {
 }
 input {
   padding: 0.5rem;
-}
-.list {
-  display: inline;
 }

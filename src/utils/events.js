@@ -2,6 +2,7 @@ const eventsForm = () => {
   const inputElement = document.querySelector(".inputElement");
   const btnSave = document.querySelector(".btnSave");
   const list = document.querySelector(".list");
+  const todoList = [];
 
   btnSave.addEventListener("click", save);
   function save() {

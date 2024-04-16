@@ -10,6 +10,7 @@ const eventsForm = () => {
     const newLi = document.createElement("LI");
     newLi.innerText = value;
     list.append(newLi);
+
     inputElement.value = "";
   }
 };

@@ -4,26 +4,17 @@ const eventsForm = () => {
   const list = document.querySelector(".list");
   const todoList = [];
 
-  renderTodo();
-  function renderTodo() {
-    let todoListHTML = "";
-    for (let i = 0; i < todoList.length; i++) {
-      const todo = todoList[i];
-      const html = `<p>${todo}</p>`;
-      todoListHTML += html;
+  btnSave.addEventListener("click", save);
+  function save() {
+    const value = inputElement.value;
+    const newLi = document.createElement("LI");
+    newLi.innerText = value;
+    list.append(newLi);
 
-      list.innerHTML = todoListHTML;
-    }
-  }
-  btnSave.addEventListener("click", addTodo);
-  function addTodo() {
-    const inputValue = inputElement.value;
-    todoList.push(inputValue);
-    console.log(todoList);
+    const arrList = todoList.push(newLi);
+    console.log(arrList);
 
     inputElement.value = "";
-
-    renderTodo();
   }
 };
 

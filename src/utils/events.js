@@ -11,8 +11,8 @@ const eventsForm = () => {
     newLi.innerText = value;
     list.append(newLi);
 
-    const arrList = todoList.push(newLi);
-    console.log(arrList);
+    todoList.push(value);
+    console.log(todoList);
 
     inputElement.value = "";
   }

@@ -33,6 +33,7 @@ input {
   padding: 0.5rem;
   font-size: 1rem;
   text-align: center;
+  width: 60%;
 }
 
 button {
@@ -41,6 +42,10 @@ button {
   color: white;
   border: none;
   display: inline-block;
+}
+.button-wrapper {
+  display: flex;
+  justify-content: space-evenly;
 }
 .list {
   padding: 1.5rem;

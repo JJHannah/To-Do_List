@@ -4,9 +4,10 @@ const eventsForm = () => {
   const list = document.querySelector(".list");
   const todoList = [];
 
-  for (let i = 0; i < todoList.length; i++) {
-     btnSave.addEventListener("click", save);
+  
   function save() {
+    for (let i = 0; i < todoList.length; i++) {
+     btnSave.addEventListener("click", save);
     const value = inputElement.value;
     const newLi = document.createElement("LI");
     newLi.innerText = value;

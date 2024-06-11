@@ -18,9 +18,9 @@ const eventsForm = () => {
 
     inputElement.value = "";
   }
-
- 
   }
+  function reset(){
+    
 };
 
 export default eventsForm;

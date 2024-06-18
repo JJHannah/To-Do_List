@@ -20,6 +20,7 @@ const eventsForm = () => {
   }
   }
   function reset(){
+    localStorage.clear();
     
 };
 

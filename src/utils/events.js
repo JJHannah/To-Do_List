@@ -12,11 +12,8 @@ const eventsForm = () => {
     const newLi = document.createElement("LI");
     newLi.innerText = value;
     list.append(newLi);
-
     todoList.push(value);
-
-
-    inputElement.value = "";
+   inputElement.value = "";
   }
   }
   function reset(){

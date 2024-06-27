@@ -2,7 +2,7 @@ const eventsForm = () => {
   const inputElement = document.querySelector(".inputElement");
   const btnSave = document.querySelector(".btnSave");
   const list = document.querySelector(".list");
-  const todoList = localStorage.setItem('text') ? JSON.parse(localStorage.getItem('text')) :[];
+  const todoList = localStorage.setItem('text') ? JSON.parse(localStorage.getItem('text') :[];
   
  btnSave.addEventListener("click", save);
   

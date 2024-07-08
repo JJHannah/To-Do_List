@@ -4,7 +4,7 @@ const eventsForm = () => {
   const list = document.querySelector(".list");
   const todoList = localStorage.setItem('text') ? JSON.parse(localStorage.getItem('text') :[];
   
- btnSave.addEventListener("click", saveItems);
+ btnSave.addEventListener("click", saveItem);
   
   function saveItems() {
     for (let i = 0; i < todoList.length; i++) {    

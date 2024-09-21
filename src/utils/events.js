@@ -21,6 +21,7 @@ const eventsForm = () => {
     
 };
   function edit(){
+        localStorage.clear();
   }
 
 export default eventsForm;

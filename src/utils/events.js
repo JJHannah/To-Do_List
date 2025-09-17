@@ -2,7 +2,7 @@ const eventsForm = () => {
   const inputElement = document.querySelector(".inputElement");
   const btnSave = document.querySelector(".btnSave");
   const list = document.querySelector(".list");
-
+  const todoList = [];
   btnSave.addEventListener("click", saveItem);
 
   function saveItems() {
@@ -10,7 +10,7 @@ const eventsForm = () => {
       const value = inputElement.value;
       const newLi = document.createElement("LI");
       newLi.innerText = value;
-      list.append(newLI);
+      list.append(newLi);
       todoList.push(value);
       inputElement.value = "";
     }

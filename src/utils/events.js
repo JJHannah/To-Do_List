@@ -3,21 +3,17 @@ const eventsForm = () => {
   const btnSave = document.querySelector(".btnSave");
   const list = document.querySelector(".list");
   const todoList = [];
-  btnSave.addEventListener("click", saveItem);
+
+  btnSave.addEventListener("click", saveItems);
 
   function saveItems() {
-    for (let i = 0; i < todoList.length; i++) {
-      const value = inputElement.value;
-      const newLi = document.createElement("LI");
-      newLi.innerText = value;
-      list.append(newLi);
-      todoList.push(value);
-      inputElement.value = "";
-    }
-  }
-  function reset() {}
-  function edit() {
-    localStorage.clear();
+    const value = inputElement.value;
+    const newLi = document.createElement("LI");
+    newLi.innerText = value;
+    todoList.push(value);
+    list.append(newLi);
+    localStorage.setItem("list", JSON.stringify(todoList));
+    inputElement.value = "";
   }
 };
 export default eventsForm;

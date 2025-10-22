@@ -6,8 +6,9 @@ const eventsForm = () => {
   let todoList = JSON.parse(localStorage.getItem("list")) || [];
 
   btnSave.addEventListener("click", saveItems);
-  addItems();
   btnReset.addEventListener("click", reset);
+
+  addItems();
 
   function saveItems() {
     const value = inputElement.value;
@@ -28,6 +29,7 @@ const eventsForm = () => {
       list.appendChild(newLi);
     });
   }
+
   function reset() {
     todoList = [];
     localStorage.clear();

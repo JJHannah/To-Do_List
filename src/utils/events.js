@@ -30,28 +30,13 @@ const eventsForm = () => {
     });
   }
 
-  function addCheckbox() {
-    const inputValue = inputText.value;
-    console.log(inputValue);
-    todoList.push(inputValue);
-
-    todoList.forEach((item) => {
-      const id = `item${item}`;
-
-      const checkbox = document.createElement("input");
-      checkbox.type = "checkbox";
-      checkbox.id = id;
-      checkbox.name = "item";
-
-      list.appendChild(checkbox);
-      list.appendChild(document.createTextNode(item));
-    });
-  }
-
   function reset() {
     todoList = [];
     localStorage.clear();
     list.textContent = " ";
   }
+  list.addEventListener("click", (e) => {
+    e.target.nodeName === "LI" && e.target.remove();
+  });
 };
 export default eventsForm;

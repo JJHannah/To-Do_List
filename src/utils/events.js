@@ -28,8 +28,6 @@ const eventsForm = () => {
       const newSpan = document.createElement("SPAN");
       const deleteButton = document.createElement("BUTTON");
       deleteButton.textContent = "delete";
-      // newLi.textContent = item;
-      // list.appendChild(newLi);
 
       newLi.appendChild(newSpan);
       newSpan.textContent = item;

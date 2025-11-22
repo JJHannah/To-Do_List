@@ -25,7 +25,15 @@ const eventsForm = () => {
 
     todoList.forEach((item) => {
       const newLi = document.createElement("LI");
-      newLi.textContent = item;
+      const newSpan = document.createElement("SPAN");
+      const deleteButton = document.createElement("BUTTON");
+      deleteButton.textContent = "delete";
+      // newLi.textContent = item;
+      // list.appendChild(newLi);
+
+      newLi.appendChild(newSpan);
+      newSpan.textContent = item;
+      newLi.appendChild(deleteButton);
       list.appendChild(newLi);
     });
   }
@@ -35,6 +43,7 @@ const eventsForm = () => {
     localStorage.clear();
     list.textContent = " ";
   }
+
   list.addEventListener("click", (e) => {
     e.target.nodeName === "LI" && e.target.remove();
   });

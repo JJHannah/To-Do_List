@@ -28,6 +28,7 @@ const eventsForm = () => {
       const newSpan = document.createElement("SPAN");
       const deleteButton = document.createElement("BUTTON");
       deleteButton.textContent = "delete";
+      deleteButton.id = "deleteBtn";
 
       newLi.appendChild(newSpan);
       newSpan.textContent = item;

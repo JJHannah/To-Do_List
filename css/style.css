@@ -52,3 +52,8 @@ button {
   margin: 1rem;
   text-align: left;
 }
+#deleteBtn {
+  margin-left: 50px;
+  padding: 15px 25px;
+  border-radius: 20px;
+}

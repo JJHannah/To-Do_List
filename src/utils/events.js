@@ -27,7 +27,7 @@ const eventsForm = () => {
       const newLi = document.createElement("LI");
       const newSpan = document.createElement("SPAN");
       const deleteButton = document.createElement("BUTTON");
-      deleteButton.textContent = "delete";
+      deleteButton.innerHTML = `<i class="fa-solid fa-trash-can"></i>`;
       deleteButton.id = "deleteBtn";
 
       newLi.appendChild(newSpan);
@@ -37,6 +37,7 @@ const eventsForm = () => {
 
       deleteButton.addEventListener("click", () => {
         list.removeChild(newLi);
+        todoList = [];
       });
     });
   }

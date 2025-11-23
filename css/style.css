@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Satoshi", sans-serif;
+  font-family: "Lora", serif;
   font-size: 1rem;
   display: flex;
   justify-content: center;
@@ -13,7 +13,7 @@ body {
 .container {
   width: 500px;
   border: 2px solid white;
-  height: 90vh;
+  max-height: 90vh;
   margin-top: 2rem;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -49,12 +49,11 @@ button {
 }
 .list {
   padding: 1.5rem;
-  margin: 1rem;
   text-align: left;
 }
 #deleteBtn {
   margin-left: 50px;
-  padding: 15px 25px;
+  padding: 10px 15px;
   border-radius: 20px;
-  background-color: #05dbf2;
+  background-color: #0468bf;
 }

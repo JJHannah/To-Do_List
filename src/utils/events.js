@@ -34,6 +34,10 @@ const eventsForm = () => {
       newSpan.textContent = item;
       newLi.appendChild(deleteButton);
       list.appendChild(newLi);
+
+      deleteButton.addEventListener("click", () => {
+        list.removeChild(newLi);
+      });
     });
   }
 
@@ -42,9 +46,5 @@ const eventsForm = () => {
     localStorage.clear();
     list.textContent = " ";
   }
-
-  list.addEventListener("click", (e) => {
-    e.target.nodeName === "LI" && e.target.remove();
-  });
 };
 export default eventsForm;

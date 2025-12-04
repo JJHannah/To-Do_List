@@ -13,7 +13,6 @@ const eventsForm = () => {
 
   addItems();
 
-  changeBackGround();
   function saveItems() {
     const value = inputElement.value;
     if (value) {
@@ -31,7 +30,8 @@ const eventsForm = () => {
       const newLi = document.createElement("LI");
       const newSpan = document.createElement("SPAN");
       const deleteButton = document.createElement("BUTTON");
-      deleteButton.innerHTML = `<i class="fa-solid fa-trash-can"></i>`;
+      // deleteButton.innerHTML = `<i class="fa-solid fa-trash-can"></i>`;
+      deleteButton.textContent = "Delete";
       deleteButton.id = "deleteBtn";
 
       newLi.appendChild(newSpan);

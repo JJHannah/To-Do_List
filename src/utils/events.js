@@ -13,6 +13,7 @@ const eventsForm = () => {
 
   addItems();
 
+  changeBackGround();
   function saveItems() {
     const value = inputElement.value;
     if (value) {

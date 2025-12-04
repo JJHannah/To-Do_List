@@ -35,6 +35,9 @@ input {
   text-align: center;
   width: 60%;
 }
+input[type="color"] {
+  width: 20%;
+}
 
 button {
   margin-top: 1rem;

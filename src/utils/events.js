@@ -4,11 +4,12 @@ const eventsForm = () => {
   const btnReset = document.querySelector(".btnReset");
   const list = document.querySelector(".list");
   const container = document.querySelector(".container");
+  const colorInput = document.querySelector(".colorInput");
   let todoList = JSON.parse(localStorage.getItem("list")) || [];
 
   btnSave.addEventListener("click", saveItems);
   btnReset.addEventListener("click", reset);
-  container.addEventListener("click", changeBackGround);
+  container.addEventListener("change", changeBackGround);
 
   addItems();
 
@@ -50,9 +51,8 @@ const eventsForm = () => {
     list.textContent = " ";
   }
 
-  function changeBackGround() {
-    container.style.backGroundColor = "magenta";
+  function changeBackGround(e) {
+    container.style.background = e.target.value;
   }
-  changeBackGround();
 };
 export default eventsForm;

@@ -42,6 +42,7 @@ const eventsForm = () => {
       deleteButton.addEventListener("click", () => {
         list.removeChild(newLi);
         todoList = [];
+        localStorage.clear();
       });
     });
   }

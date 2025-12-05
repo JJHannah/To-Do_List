@@ -9,7 +9,7 @@ const eventsForm = () => {
 
   btnSave.addEventListener("click", saveItems);
   btnReset.addEventListener("click", reset);
-  container.addEventListener("change", changeBackGround);
+  colorInput.addEventListener("change", changeBackgroundColor);
 
   addItems();
 
@@ -52,8 +52,11 @@ const eventsForm = () => {
     list.textContent = " ";
   }
 
-  function changeBackGround(e) {
-    container.style.background = e.target.value;
+  function changeBackgroundColor(e) {
+    let target = e.target.value;
+    container.style.background = target;
+    localStorage.setItem("color", target);
   }
+  container.style.background = localStorage.getItem("color");
 };
 export default eventsForm;

@@ -24,13 +24,20 @@
   <body>
     <div class="container">
       <span><label>Add list</label></span>
-      <span
-        ><input
-          class="colorInput"
-          type="color"
-          name="colorInput"
-          id="colorInput"
-      /></span>
+      <span>
+        <label class="backgroundColor" for="colors"
+          >choose background:
+
+          <select name="colors" id="colors">
+            <option value="#f6f7f9" class="color color1">Too modern</option>
+            <option value="#FFD870" class="color color2">Amber</option>
+            <option value="#c5f5f0" class="color color3">Turquiose</option>
+            <option value="#33ffdd" class="color color4">Oceanic Blue</option>
+            <option value="#fff6d2" class="color color4">Beige Melange</option>
+            <option value="#ffe9f4" class="color color4">Baby Pink</option>
+          </select>
+        </label>
+      </span>
       <input type="text" class="inputElement" placeholder="Add item" />
 
       <div class="button-wrapper">

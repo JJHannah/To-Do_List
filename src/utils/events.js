@@ -5,11 +5,12 @@ const eventsForm = () => {
   const list = document.querySelector(".list");
   const container = document.querySelector(".container");
   const colorInput = document.querySelector(".colorInput");
+  const selectElement = document.querySelector("#colors");
   let todoList = JSON.parse(localStorage.getItem("list")) || [];
 
   btnSave.addEventListener("click", saveItems);
   btnReset.addEventListener("click", reset);
-  colorInput.addEventListener("change", changeBackgroundColor);
+  selectElement.addEventListener("change", selectBackgroundColor);
 
   addItems();
 
@@ -43,6 +44,7 @@ const eventsForm = () => {
         list.removeChild(newLi);
         todoList = [];
         localStorage.clear();
+        localStorage.removeItem();
       });
     });
   }
@@ -52,11 +54,20 @@ const eventsForm = () => {
     localStorage.clear();
     list.textContent = " ";
   }
-
+  /*
   function changeBackgroundColor(e) {
     let target = e.target.value;
     container.style.background = target;
     localStorage.setItem("color", target);
+  }
+  container.style.background = localStorage.getItem("color");
+*/
+  function selectBackgroundColor(e) {
+    //   console.log(target);
+    if (target) {
+      container.style.background = target;
+      localStorage.setItem("color", target);
+    }
   }
   container.style.background = localStorage.getItem("color");
 };

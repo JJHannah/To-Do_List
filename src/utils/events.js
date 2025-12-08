@@ -63,7 +63,7 @@ const eventsForm = () => {
   container.style.background = localStorage.getItem("color");
 */
   function selectBackgroundColor(e) {
-    //   console.log(target);
+    let target = e.target.value;
     if (target) {
       container.style.background = target;
       localStorage.setItem("color", target);

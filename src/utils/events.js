@@ -54,14 +54,7 @@ const eventsForm = () => {
     localStorage.clear();
     list.textContent = " ";
   }
-  /*
-  function changeBackgroundColor(e) {
-    let target = e.target.value;
-    container.style.background = target;
-    localStorage.setItem("color", target);
-  }
-  container.style.background = localStorage.getItem("color");
-*/
+
   function selectBackgroundColor(e) {
     let target = e.target.value;
     if (target) {

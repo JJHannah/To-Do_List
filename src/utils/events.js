@@ -44,7 +44,7 @@ const eventsForm = () => {
         list.removeChild(newLi);
         todoList = [];
         localStorage.clear();
-        localStorage.removeItem();
+        localStorage.removeItem(list);
       });
     });
   }
